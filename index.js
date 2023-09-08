@@ -53,7 +53,7 @@ app.get('/NewProjects', (req, res) => {
 
 app.get('/issuePage', (req, res) => {
     // console.log(path)
-    res.render('issuePage');
+    res.render('issuePage.ejs');
 })
 
 //route to save new project

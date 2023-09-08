@@ -1,0 +1,23 @@
+<%- include('./header') %>
+    <%- include('./navBARR') %>
+
+
+        <div class="diary">
+            <% projects.forEach((data)=>{%>
+                <div class="diary-container">
+                    <h3>NAME:
+                        <%= data.Name%>
+                    </h3>
+                    <h3>Description:
+                        <%= data.Description%>
+                    </h3>
+                    <p>Author:
+                        <%= data.Author %>
+                    </p>
+                    
+                    <a href="/projectDetails/<%=data.id %> "> EDIT </a>
+                </div>
+                <% }) %>
+
+        </div>
+        <%- include('./footer')%>

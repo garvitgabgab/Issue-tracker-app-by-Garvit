@@ -1,0 +1,17 @@
+<%- include('./header') %>
+    <%- include('./navBARR') %>
+        <div class="page-container">
+            <h1> NAME: <%= projects.Name%>
+            </h1>
+            <p>
+                Author: <%=projects.Author%>
+            </p>
+            <p class="diary-text"> Issue:
+                <%=projects.Issue%>
+
+            </p>
+            <div class="setting">
+                <a href="/projectDetails/edit/<%=projects.id %>" class="edit">Raise an issue</a>
+            </div>
+        </div>
+        <%- include('./footer')%>

@@ -1,0 +1,24 @@
+<%- include('./header') %>
+    <%- include('./navBarr') %>
+        <div class="showcase">
+            <h1>
+                ISSUE TRACKER BY <span class="green-text">GARVIT</span>
+            </h1>
+
+            <a href="./NewProjects" class="add">➕ ADD NEW PROJECT</a>
+        </div>
+
+        <div class="diary">
+            <% projects.forEach((data)=>{%>
+                <div class="diary-container">
+                    <h3>
+                        <%= data.Name%>
+                    </h3>
+                    <p>
+                        <%= data.Author %>
+                    </p>
+                </div>
+                <% }) %>
+        </div>
+
+        <%- include('./footer')%>

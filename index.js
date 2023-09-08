@@ -47,7 +47,7 @@ app.use(express.static('./assets'));
 
 app.get('/NewProjects', (req, res) => {
     // console.log(path)
-    res.render('NewProjects');
+    res.render('NewProjects.ejs');
 })
 
 
